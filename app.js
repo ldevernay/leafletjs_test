@@ -18,6 +18,9 @@ mymap.on('click', function (e) {
     console.log(e.latlng.lat + " + " + e.latlng.lng);
     var new_marker = L.marker([e.latlng.lat, e.latlng.lng]).addTo(mymap);
     new_marker.on('click', function(e){
-        new_marker.removeFrom(mymap);
+        //new_marker.removeFrom(mymap);
+        // TODO : ajouter une popup dans laquelle on affiche les
+        // infos qu'on récupère sur OpenWeatherMapAPI
+        // Pour cela, utiliser les coordonnées sur la variable e.
     })
 })
